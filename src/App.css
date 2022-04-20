@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-size: 2rem;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 5rem;
+}
+
+.right-btns {
+  display: flex;
+  width: 60rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: right;
+  margin-right: 2rem;
+}
+
+.btn {
+  width: 10rem;
+  font-size: 1.6rem;
+  height: 3.5rem;
+  margin-right: 2rem;
+}
+
+.form {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+.form-control {
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.btn-warning:hover {
+  background-color: rgb(103, 184, 11);
+  border-color: rgb(103, 184, 11);
+}
+
+/* -------------------------------------------------- Landing Page Styling --------------------------------------------------- */
+.LandingPage {
+  position: relative;
+}
+
+.LandingPage > h1 {
+  position: absolute;
   color: white;
+  top: 5%;
+  left: 5%;
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 15rem;
 }
 
-.App-link {
-  color: #61dafb;
+.LandingPage > h2 {
+  position: absolute;
+  font-family: "Pacifico", cursive;
+  color: white;
+  top: 80%;
+  left: 18%;
+  width: 60%;
+  font-size: 6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.LandingPage_Image {
+  height: 90rem;
+  width: 100%;
+}
+
+/* --------------------------------------------------- Services Cards Styling ------------------------------------------------ */
+.container {
+  display: flex;
+  /* width: 20rem; */
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.card {
+  width: 30rem;
+  color: black;
+  border-radius: 2%;
+}
+.card > img {
+  width: 100%;
+  height: 60%;
+  margin: 5rem 0;
+}
+
+.card > h2 {
+  height: 100%;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+/* --------------------------------------------------- Footer Styling ------------------------------------------------ */
+
+.footer-container {
+  display: flex;
+  color: white;
+  /* width: 100vw; */
 }
