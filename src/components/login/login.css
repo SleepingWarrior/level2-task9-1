@@ -1,0 +1,76 @@
+.App {
+  height: 100vh;
+}
+.container-login {
+  width: 30rem;
+  position: relative;
+  margin: 0 auto;
+  background-color: grey;
+  height: 30rem;
+  border-radius: 3%;
+  top: 50%;
+  transform: translateY(-60%);
+  border: 2px solid orange;
+}
+
+.h1-login {
+  top: 10%;
+  left: 3%;
+  position: absolute;
+  font-size: 3rem;
+  display: block;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  border: none;
+  border-radius: 2%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.login-form > input,
+button {
+  /* color: black; */
+  font-size: 2rem;
+  border: 1px white solid;
+  /* border-bottom: white solid 0.1px; */
+  margin: 1.5rem 0;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.input::placeholder {
+  font-size: 1.5rem;
+  font-style: italic;
+  opacity: 0.5;
+  padding-left: 0.5rem;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+  border: solid 1px cornflowerblue;
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  margin-top: 0.3rem;
+  justify-content: flex-start;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+.checkbox > label {
+  margin-left: 0.5rem;
+}
+
+.input-checkbox {
+  margin-left: 1rem;
+}

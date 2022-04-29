@@ -1,0 +1,29 @@
+.container-home {
+  position: relative;
+  margin: 0;
+}
+
+.container-home > h1 {
+  position: absolute;
+  color: white;
+  top: 5%;
+  left: 5%;
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 15rem;
+}
+
+.container-home > h2 {
+  position: absolute;
+  font-family: "Pacifico", cursive;
+  color: white;
+  top: 80%;
+  left: 18%;
+  width: 60%;
+  font-size: 6rem;
+}
+
+.home-image {
+  height: 90rem;
+  width: 100vw;
+  margin: 0;
+}

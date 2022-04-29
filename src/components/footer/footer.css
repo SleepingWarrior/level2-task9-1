@@ -1,0 +1,25 @@
+.site-footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 3rem; */
+  font-size: 1.5rem;
+  height: 25rem;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9));
+}
+
+.footer-links > ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+#copyright-information {
+  font-size: 1rem;
+}
+
+#social-buttons {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}

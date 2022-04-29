@@ -1,28 +1,40 @@
+// ?: Styles
 import "./App.css";
-import item from "./services";
-import Card from "./components/Card";
-import Header from "./components/header components/Header"
-import Landing from "./components/Landing";
-import Footer from "./components/footer components/Footer";
-import Login from "./components/login components/Login"
+
+// ?: Pages
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Login from "./pages/LoginPage";
+import Home from "./components/home/Home";
+import Login from "./components/login/Login";
+import Signup from "./components/signup/Signup";
+import About from "./components/about/About";
+import Contacts from "./components/contacts/Contacts";
+
+// ?: Components
+// import Card from "./components/card/Card";
+import Header from "./components/header/Header";
+// import Footer from "./components/footer/Footer";
+// import item from "./services";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Landing />
-      <Login />
-      <div className="container">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="about" element={<About />} />
+          <Route path="contacts" element={<Contacts />} />
+        </Routes>
+      </BrowserRouter>
+      {/* <div className="card-container">
         {item.map((createCard) => (
-          <Card
-            key={createCard.key}
-            title={createCard.title}
-            img={createCard.img}
-            price={createCard.price}
-          />
+          <Card key={createCard.key} title={createCard.title} img={createCard.img} price={createCard.price} />
         ))}
       </div>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
